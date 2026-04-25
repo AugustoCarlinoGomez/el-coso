@@ -3,13 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Título de la Página</title>
+    <title>Portfolio Profesional</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: #f4f7fb;
+        }
+        header {
+            background: #1e3a8a;
+            color: #fff;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        nav {
+            margin-top: 15px;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 12px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            align-items: center;
+        }
+        .hero img {
+            width: 100%;
+            border-radius: 12px;
+            object-fit: cover;
+            min-height: 280px;
+        }
+        .section-title {
+            margin-top: 40px;
+            margin-bottom: 16px;
+            font-size: 1.8rem;
+            color: #1e3a8a;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .project-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+            overflow: hidden;
+        }
+        .project-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .project-card div {
+            padding: 18px;
+        }
+        .skills-list, .contact-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            gap: 10px;
+        }
+        .skills-list li, .contact-list li {
+            background: #fff;
+            border-radius: 10px;
+            padding: 12px 14px;
+            box-shadow: 0 6px 16px rgba(15, 23, 42, 0.05);
+        }
+        footer {
+            text-align: center;
+            padding: 24px 20px;
+            color: #6b7280;
+        }
+        @media (max-width: 800px) {
+            .hero {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Hola Papus</h1>
-    <p>Bienvenidos a la grasa :v</p>
-    <h3>papu misterioso</h3>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9c1lQSOYxXDoEpq8eEV2isDZVZoCEbAj3Xw&s" alt="IMAGEN DURISIMA">
-    <p>MOZILLA</p>
+    <header>
+        <h1>Portfolio Profesional</h1>
+        <p>Presentación de proyectos, habilidades y experiencia con espacio para imágenes.</p>
+        <nav>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#contacto">Contacto</a>
+            <a href="trasfondo.html">Trasfondo</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div>
+                <h2>Sobre mí</h2>
+                <p>Diseñador/a y desarrollador/a con experiencia en crear soluciones digitales modernas. Trabajo con enfoque profesional para ofrecer sitios web, aplicaciones y contenidos visuales claros y atractivos.</p>
+                <p>Este portafolio incluye proyectos, imágenes de trabajos destacados y enlaces de contacto profesional.</p>
+            </div>
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80" alt="Imagen profesional de portfolio">
+        </section>
+
+        <section id="portfolio">
+            <h2 class="section-title">Portfolio</h2>
+            <div class="projects">
+                <article class="project-card">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80" alt="Proyecto ejemplo 1">
+                    <div>
+                        <h3>Proyecto 1</h3>
+                        <p>Interfaz de usuario moderna para una aplicación empresarial.</p>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80" alt="Proyecto ejemplo 2">
+                    <div>
+                        <h3>Proyecto 2</h3>
+                        <p>Desarrollo front-end responsive con atención a la accesibilidad.</p>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80" alt="Proyecto ejemplo 3">
+                    <div>
+                        <h3>Proyecto 3</h3>
+                        <p>Estrategia visual y diseño de marca para un cliente corporativo.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="habilidades">
+            <h2 class="section-title">Habilidades</h2>
+            <ul class="skills-list">
+                <li>Diseño UX/UI</li>
+                <li>HTML5, CSS3 y JavaScript</li>
+                <li>Desarrollo responsive</li>
+                <li>Gestión de proyectos creativos</li>
+            </ul>
+        </section>
+
+        <section id="contacto">
+            <h2 class="section-title">Contacto</h2>
+            <ul class="contact-list">
+                <li>Email: augusterminator@gmail.com</li>
+                <li>Teléfono: +54 9 345 xxx xxxx</li>
+                <li>GitHub: github.com/AugustoCarlinoGomez</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Portfolio profesional creado para mostrar proyectos y experiencia.</p>
+    </footer>
 </body>
 </html>
